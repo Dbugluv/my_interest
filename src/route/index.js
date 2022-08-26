@@ -9,21 +9,27 @@ import App from '../App'
 import LoginHint from '../pages/LoginHint'
 import OwnerHomePage from '../pages/OwnerHomePage'
 import AlbumShowPage from '../pages/AlbumShowPage'
+import PicDetailPage from '../pages/PicDetailPage'
 
 const routeMap = [
   {
-    path: '/',
+    path: '/personal/albums',
     component: OwnerHomePage,
     exact: true,
   },
   {
-    path: '/loginHint',
+    path: '/',
     component: LoginHint,
     exact: true,
   },
   {
-    path: '/AlbumShowPage:albumId',
+    path: '/personal/picList/:albumId',
     component: AlbumShowPage,
+    exact: true,
+  },
+  {
+    path: '/personal/PicDetail/:picId',
+    component: PicDetailPage,
     exact: true,
   },
 ]

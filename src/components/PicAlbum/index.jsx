@@ -8,7 +8,7 @@ export default function PicAlbum (props ) {
 
   const jumpToAlbumShowPage = (info) => {
     console.log('item', info)
-    jumpPage(`/AlbumShowPage:${info.albumId}`)
+    jumpPage(`/personal/picList/${info.albumId}`)
   }
 
   return (

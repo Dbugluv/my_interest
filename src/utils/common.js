@@ -4,6 +4,8 @@ export const jumpPage = (routeUrl, {type = "open", origin = window.location.orig
     window.location.replace(url)
   } else if(type === 'open'){
     window.open(url)
+  } else if (type === 'push') {
+    window.location.href = url
   }
 }
 
